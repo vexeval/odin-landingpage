@@ -18,6 +18,8 @@ body {
 	flex-wrap: wrap-reverse;
 	justify-content: space-between;
 	align-items: center;
+	/* changed by nehemys */
+	/* margin-right: 100px; - caused the navbar to not cover the entire horizontal top */
 }
 
 .nav a {
@@ -32,12 +34,17 @@ body {
 	text-decoration: none;
 }
 
+.nav a#last {
+	margin-right: 6.25rem;
+}
+
 .nav ul {
 	list-style: none;
 }
 
 .nav h3 {
-	margin-right: 10px;
+	/* changed by nehemy */
+	margin-left: 6.25rem;
 	padding: 8px;
 	background-color: #1f2937;
 	font-size: 24px;
@@ -59,7 +66,7 @@ body {
 .section-1 {
 	background-color: #1f2937;
 	display: flex;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; changed on my end */
 	justify-content: space-around;
 	align-items: center;
 	padding: 10px;
@@ -78,14 +85,15 @@ body {
 	font-size: 48px;
 	font-weight: bolder;
 	color: #f9faf8;
+	margin-right: 6.25rem;
 }
 
 .section-1 .text {
 	display: inline-block;
 	/* border: 1px solid #38334e; || remove later */
-	padding: 0.5rem 1rem;
 	vertical-align: middle;
 	color: #f9faf8;
+	margin-left: 6.25rem; /* if doing media queries, lower these in lower screen sizes*/
 }
 
 .section-1 button {
@@ -98,4 +106,61 @@ body {
 	cursor: pointer;
 	border-radius: 0.5rem;
 	border: none;
+}
+
+/* Section 2 */
+
+.section-2 .title {
+	font-size: 48px;
+	font-weight: 900;
+	margin-right: 6.25rem;
+	position: relative;
+	padding: 3rem 1rem;
+}
+
+.section-2 {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px; /* Section 3; */
+}
+
+.section-2 .box-collection {
+	display: flex;
+	margin: 3rem 0;
+}
+
+.section-2 .box {
+	margin: 4rem;
+}
+
+.section-2 .box p {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+/* this is the quote of the website */
+.section-3 {
+	background: #e5e7eb;
+	/* padding: 60px 300px; */
+	padding: 5rem 25rem;
+}
+.cite {
+	display: flex;
+	justify-content: end;
+}
+
+/* This is the footer of the website. */
+
+.footer {
+	position: relative;
+	background: #1f2937;
+	color: white;
+	height: 8.9vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 8.9vh;
 }
