@@ -124,7 +124,7 @@ body {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	padding: 10px; /* Section 3; */
+	padding: 10px;
 }
 
 .section-2 .box-collection {
@@ -133,13 +133,19 @@ body {
 }
 
 .section-2 .box {
-	margin: 4rem;
+	margin: 2rem;
 }
 
 .section-2 .box p {
 	font-size: 1.5rem;
 	text-align: center;
 }
+
+.section-2 .box img {
+	transform: scale(0.7, 0.7);
+}
+
+/* Section 3 */
 
 /* this is the quote of the website */
 .section-3 {
@@ -152,10 +158,55 @@ body {
 	justify-content: end;
 }
 
+/* Section 4 */
+
+.section-4 {
+	background-color: white;
+	border: 1px solid #000;
+}
+
+.section-4 .box {
+	background-color: #3882f6;
+	padding: 5rem 25rem;
+	transform: scale(0.5, 0.5);
+	font-size: 2rem;
+	border-radius: 1.2rem;
+	display: flexbox;
+	/* border: 1px solid #000; */
+}
+
+.section-4 .box h3 {
+	color: white;
+}
+
+.section-4 .box p {
+	color: white;
+}
+
+.section-4 .box button {
+	background-color: transparent;
+	padding: 0.4rem 1.5rem;
+	margin: 1rem 0rem;
+	font-size: 24px;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	border: 1px solid #fff;
+	/* display: flex;
+	justify-content: flex-end; */
+	/* display: none; */
+}
+
+.section-4 .box .btn {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
 /* This is the footer of the website. */
 
 .footer {
-	position: relative;
 	background: #1f2937;
 	color: white;
 	height: 8.9vh;
