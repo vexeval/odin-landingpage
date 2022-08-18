@@ -186,15 +186,27 @@ body {
 	transform: scale(0.5, 0.5);
 	font-size: 2rem;
 	border-radius: 1.2rem;
-	display: flexbox;
+
+	/* grid stuff */
+	display: grid;
+	grid-template-columns: 1000px 150px;
+	grid-template-rows: auto;
+	grid-template-areas: "text-area button";
+
 	/* border: 1px solid #000; */
+}
+
+.section-4 .box .text-area {
+	grid-area: text-area;
+	/* border: 1px solid #000; */
+	/* align-items: center; */
 }
 
 .section-4 .box h3 {
 	color: white;
 	margin: 0;
-	display: inline-block;
-	margin-top: 2rem;
+	/* display: inline-block; */
+	/* margin-top: 2rem; */
 }
 
 .section-4 .box p {
@@ -209,23 +221,31 @@ body {
 	/* margin: 1rem 0rem; */
 	/* margin-left: auto; */
 	margin-right: 0;
-	margin-bottom: 2rem;
+	/* margin-bottom: 2rem; */
+	margin-top: 0.5rem;
 	font-size: 24px;
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
 	border: 3px solid #fff;
 	border-radius: 0.7rem;
+	grid-area: button;
+	/* align-self: end; */
 	/* display: flex; */
 	/* justify-content: flex-start; */
 	/* display: none; */
 }
 
-.section-4 .box .btn {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-}
+/* THIS (BELOW) IS FROM APIPROJECT, NOT FROM HERE */
+/* .gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	padding: 2rem 0;
+	width: 80%;
+	margin: auto;
+	row-gap: 5rem;
+	column-gap: 3rem;
+} */
 
 /* This is the footer of the website. */
 
